@@ -12,6 +12,7 @@ import os
 PROJECT='peppy-freedom-276106'
 schema = 'frame_number:INTEGER, frame_time_relative:STRING, eth_src_resolved:STRING,eth_dst_resolved:STRING, frame_len:INTEGER, frame_protocols:STRING'
 TOPIC = "projects/peppy-freedom-276106/topics/managed_wlp3s0"
+
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/media/knilesh/DATA/docs/Apollo's Landing-0424566883dc.json"
 
 
@@ -38,7 +39,7 @@ def main(argv=None):
    parser = argparse.ArgumentParser()
    parser.add_argument("--input_topic")
    parser.add_argument("--output")
-   known_args = parser.parse_known_args(argv)
+#    known_args = parser.parse_known_args(argv)
 
 
    p = beam.Pipeline(options=PipelineOptions())

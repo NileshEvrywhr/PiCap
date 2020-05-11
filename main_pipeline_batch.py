@@ -10,7 +10,7 @@ PROJECT='peppy-freedom-276106'
 schema = 'frame_number:INTEGER, frame_time_relative:STRING, eth_src_resolved:STRING,eth_dst_resolved:STRING, frame_len:INTEGER, frame_protocols:STRING'
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/media/knilesh/DATA/docs/Apollo's Landing-0424566883dc.json"
 
-src_path = "ipsum.txt"
+src_path = "dolor.txt"
 
 def regex_clean(data):
     return data

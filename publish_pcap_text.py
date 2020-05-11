@@ -22,7 +22,7 @@ def callback(message_future):
         
 if __name__ == '__main__':
     
-    f = open('/media/knilesh/DATA/code/PiCap/lorem.txt','r')
+    f = open('/media/knilesh/DATA/code/PiCap/ipsum.txt','r')
     
     while True:
         line = f.readline()
