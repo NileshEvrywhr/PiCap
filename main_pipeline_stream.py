@@ -39,10 +39,10 @@ def main(argv=None):
    parser = argparse.ArgumentParser()
    parser.add_argument("--input_topic")
    parser.add_argument("--output")
-#    known_args = parser.parse_known_args(argv)
+   known_args = parser.parse_known_args(argv)
 
 
-   p = beam.Pipeline(options=PipelineOptions())
+   p = beam.Pipeline(options=PipelineOptions(known_args))
 
    (p
       | 'ReadData' >> beam.io.ReadFromPubSub(topic=TOPIC).with_output_types(bytes)
